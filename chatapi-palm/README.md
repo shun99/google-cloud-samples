@@ -31,7 +31,8 @@ https://developers.google.com/chat/api/guides/message-formats?hl=ja#handle_event
 ### ソースコード準備
 
 ```shell
-git clone git@github.com:shun99/google-cloud-samples/chatapi-palm.git
+git clone https://github.com/shun99/google-cloud-samples.git
+cd ./google-cloud-samples/chatapi-palm/
 ```
 
 - [verify_token.py](./verify_token.py)
