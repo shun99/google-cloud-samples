@@ -2,7 +2,7 @@ import vertexai
 from vertexai.preview.language_models import ChatModel, InputOutputTextPair
 
 # Project IDを指定してください
-project_id = "chat-api-394105"
+project_id = "<Project ID>"
 location = "us-central1"
 
 vertexai.init(project=project_id, location=location)

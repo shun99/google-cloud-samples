@@ -3,7 +3,7 @@ from oauth2client import client
 
 def verify_id_token(token):
   # Project番号を指定してください
-  audience = '511748666295'
+  audience = '<Project番号>'
 
   # Bearerトークン発行元
   chat_issuer = 'chat@system.gserviceaccount.com'
