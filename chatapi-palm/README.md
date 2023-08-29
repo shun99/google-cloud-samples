@@ -22,7 +22,8 @@ https://developers.google.com/chat/api/guides/message-formats?hl=ja#handle_event
 # 手順
 ## Cloud Functions
 
-[APIを有効化](https://console.cloud.google.com/apis/enableflow?apiid=cloudbuild.googleapis.com,artifactregistry.googleapis.com,cloudfunctions.googleapis.com,aiplatform.googleapis.com)する
+[APIを有効化](https://console.cloud.google.com/apis/enableflow?apiid=run.googleapis.com,cloudbuild.googleapis.com,artifactregistry.googleapis.com,cloudfunctions.googleapis.com,aiplatform.googleapis.com)する
+- Cloud Run Admin API
 - Cloud Build API
 - Artifact Registry API
 - Cloud Functions API
@@ -35,13 +36,6 @@ git clone https://github.com/shun99/google-cloud-samples.git
 cd ./google-cloud-samples/chatapi-palm/
 ```
 
-- [verify_token.py](./verify_token.py)
-
-  AUDIENCEにGCPのProject番号を指定
-
-- [chat.py](./chat.py)
-
-  project_idにGCPのProject IDを指定
 
 ### gcloud準備
 ```shell
@@ -82,6 +76,11 @@ functions-framework --target hello_chat
 呼び出しに成功する
 
 ### Cloud Functionsのデプロイ
+```shell
+sh deploy.sh
+```
+
+(参考)上記シェルを実行すると以下コマンドでデプロイされます
 ```
 gcloud functions deploy <任意のFunction名> \
 --gen2 \
