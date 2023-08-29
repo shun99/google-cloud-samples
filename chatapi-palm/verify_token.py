@@ -1,9 +1,9 @@
 import sys
 from oauth2client import client
 
-def verify_id_token(token):
+def verify_id_token(project_number, token):
   # Project番号を指定してください
-  audience = '<Project番号>'
+  audience = project_number
 
   # Bearerトークン発行元
   chat_issuer = 'chat@system.gserviceaccount.com'
