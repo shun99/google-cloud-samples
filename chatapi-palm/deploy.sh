@@ -11,5 +11,7 @@ gcloud functions deploy \
     --entry-point=hello_chat \
     --trigger-http \
     --allow-unauthenticated \
+    --timeout=300 \
+    --min-instances 1 \
     --set-env-vars=PROJECT_NUMBER=${PROJECT_NUMBER},PROJECT_ID=${PROJECT_ID}
 
