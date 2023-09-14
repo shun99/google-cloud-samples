@@ -11,7 +11,7 @@ class Chat:
                 ):
 
         vertexai.init(project=project_id, location=model_location)
-        self.chat_model = ChatModel.from_pretrained("chat-bison")
+        self.chat_model = ChatModel.from_pretrained("chat-bison@001")
         self.parameters = {
             "temperature": 0.2,
             "max_output_tokens": 1024,
