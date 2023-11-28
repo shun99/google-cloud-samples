@@ -66,7 +66,7 @@ gcloud services enable compute.googleapis.com run.googleapis.com \
 
 ### Cloud Runへデプロイ
 ```shell
-gcloud run deploy my-app --region "asia-northeast1" --source . \
-    --update-env-vars GOOGLE_CLOUD_PROJECT="inspire-the-next-406409",MODEL_LOCATION="asia-northeast1"
+gcloud run deploy my-app --region "<リージョン>" --source . \
+    --update-env-vars GOOGLE_CLOUD_PROJECT="<プロジェクトID>",MODEL_LOCATION="<リージョン>"
     --allow-unauthenticated --quiet
 ```
