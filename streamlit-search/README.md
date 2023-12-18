@@ -2,6 +2,15 @@
 StreamlitのChat UIからGemini/PaLM/Vertex AI Searchを呼び出す。
 動くことを確認したらCloud Runへデプロイ。
 
+# 作成物イメージ
+Vertex AI Search選択時
+
+![Sample1](./doc/search_sample.png)
+
+Gemini Pro選択時
+
+![Sample2](./doc/gemini_sample.png)
+
 # 前提
 - gcloud
 - pip
